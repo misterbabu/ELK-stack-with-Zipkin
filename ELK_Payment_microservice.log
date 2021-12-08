@@ -1,0 +1,873 @@
+2021-12-08 00:02:06.697  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 00:02:08.381  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 00:02:08.844  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 446ms. Found 1 JPA repository interfaces.
+2021-12-08 00:02:09.716  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 00:02:11.118  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 00:02:11.132  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 00:02:11.132  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 00:02:11.428  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 00:02:11.429  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4653 ms
+2021-12-08 00:02:12.104  WARN [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information}]
+2021-12-08 00:02:12.805  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 00:02:12.958  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 00:02:13.011  WARN [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 00:02:13.011  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 00:02:13.024  WARN [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 00:02:13.025  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 00:02:13.098  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 00:02:13.309  WARN [PAYMENT-SERVICE,,,] 14772 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 00:02:13.492  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 00:02:13.783  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 00:02:14.884  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 00:02:14.967  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 00:02:15.841  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 00:02:16.230  WARN [PAYMENT-SERVICE,,,] 14772 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 00:02:17.026  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 00:02:17.034  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 00:02:17.046  INFO [PAYMENT-SERVICE,,,] 14772 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 00:02:17.263  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 00:02:17.531  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 00:02:17.531  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 00:02:17.912  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 00:02:17.913  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 00:02:18.433  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:02:18.471  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 00:02:18.471  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 00:02:18.472  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 00:02:18.472  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 00:02:18.472  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 00:02:18.473  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 00:02:18.473  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 00:02:18.800  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 00:02:18.807  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 00:02:18.812  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 00:02:18.818  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638901938816 with initial instances count: 1
+2021-12-08 00:02:18.840  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 00:02:18.842  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638901938842, current=UP, previous=STARTING]
+2021-12-08 00:02:18.845  INFO [PAYMENT-SERVICE,,,] 14772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 00:02:18.920  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 00:02:18.922  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 00:02:18.926  INFO [PAYMENT-SERVICE,,,] 14772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 00:02:19.187  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 00:02:20.107  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 00:02:20.139  INFO [PAYMENT-SERVICE,,,] 14772 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 15.635 seconds (JVM running for 16.713)
+2021-12-08 00:07:18.489  INFO [PAYMENT-SERVICE,,,] 14772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:08:02.403  INFO [PAYMENT-SERVICE,,,] 14772 --- [http-nio-9191-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 00:08:02.407  INFO [PAYMENT-SERVICE,,,] 14772 --- [http-nio-9191-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 00:08:02.688  INFO [PAYMENT-SERVICE,,,] 14772 --- [http-nio-9191-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 280 ms
+2021-12-08 00:08:03.000  INFO [PAYMENT-SERVICE,29b1e71835588ca7,982c5039a22c0fb0,true] 14772 --- [http-nio-9191-exec-2] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"e7b54ea1-52e3-45cf-b726-ef0f0ab3baa5","orderId":118,"amount":3000.0}
+2021-12-08 00:08:05.539  WARN [PAYMENT-SERVICE,,,] 14772 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2021-12-08 00:08:05.564  WARN [PAYMENT-SERVICE,,,] 14772 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:147) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:137) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.7.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.15.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:246) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:351) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:373) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 9 common frames omitted
+
+2021-12-08 00:09:28.058  INFO [PAYMENT-SERVICE,fd05dee7ec9ed141,fd05dee7ec9ed141,true] 14772 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : paymentService findPaymentOrderId : {"paymentId":28,"paymentStatus":"success","transactionId":"e7b54ea1-52e3-45cf-b726-ef0f0ab3baa5","orderId":118,"amount":3000.0}
+2021-12-08 00:12:18.500  INFO [PAYMENT-SERVICE,,,] 14772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:17:18.510  INFO [PAYMENT-SERVICE,,,] 14772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:22:18.518  INFO [PAYMENT-SERVICE,,,] 14772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:24:04.176  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 00:24:13.807  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 00:24:17.192  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3033ms. Found 1 JPA repository interfaces.
+2021-12-08 00:24:23.717  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 00:24:35.574  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 00:24:35.643  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 00:24:35.666  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 00:24:38.385  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 00:24:38.386  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 34153 ms
+2021-12-08 00:24:46.918  WARN [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=java.util.concurrent.TimeoutException: RestTemplateSender{http://localhost:9411/api/v2/spans} check() timed out after 1000ms}]
+2021-12-08 00:24:55.205  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 00:24:56.080  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 00:24:57.757  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 00:25:01.745  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 00:25:03.530  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 00:25:11.936  WARN [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 00:25:11.937  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 00:25:11.957  WARN [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 00:25:11.958  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 00:25:15.083  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 00:25:16.658  WARN [PAYMENT-SERVICE,,,] 7580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 00:25:17.276  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 00:25:37.687  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 00:25:38.723  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 00:25:38.764  INFO [PAYMENT-SERVICE,,,] 7580 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 00:25:40.642  WARN [PAYMENT-SERVICE,,,] 7580 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 00:25:48.310  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 00:25:49.922  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 00:25:51.072  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 00:25:51.073  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 00:25:54.234  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 00:25:54.235  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 00:26:00.064  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:26:00.248  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 00:26:00.250  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 00:26:00.251  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 00:26:00.251  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 00:26:00.252  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 00:26:00.254  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 00:26:00.254  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 00:26:00.768  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 00:26:00.775  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 00:26:00.784  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 00:26:00.795  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638903360791 with initial instances count: 0
+2021-12-08 00:26:00.889  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 00:26:00.892  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638903360892, current=UP, previous=STARTING]
+2021-12-08 00:26:00.896  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 00:26:02.356  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 00:26:02.361  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 00:26:02.914  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 00:26:05.405  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 00:26:09.474  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 00:26:09.525  INFO [PAYMENT-SERVICE,,,] 7580 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 137.165 seconds (JVM running for 141.472)
+2021-12-08 00:26:30.786  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 00:26:30.788  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 00:26:30.788  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 00:26:30.789  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 00:26:30.791  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 00:26:30.791  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-12-08 00:26:30.791  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 00:26:30.882  INFO [PAYMENT-SERVICE,,,] 7580 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 00:28:32.797  INFO [PAYMENT-SERVICE,,,] 7580 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 00:28:32.798  INFO [PAYMENT-SERVICE,,,] 7580 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 00:28:32.858  INFO [PAYMENT-SERVICE,,,] 7580 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 60 ms
+2021-12-08 00:28:33.247  INFO [PAYMENT-SERVICE,a33954b9f8f46b63,f44cc46a60865b82,true] 7580 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"9e12542b-4b70-405f-bfdf-780dd9a85a47","orderId":119,"amount":3000.0}
+2021-12-08 00:28:36.860  WARN [PAYMENT-SERVICE,,,] 7580 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2021-12-08 00:28:36.868  WARN [PAYMENT-SERVICE,,,] 7580 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:147) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:137) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.7.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.15.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:791) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:726) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529) ~[na:na]
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:64) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:770) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 9 common frames omitted
+
+2021-12-08 00:29:21.788  INFO [PAYMENT-SERVICE,1bb01ecf1a8dbe4a,1bb01ecf1a8dbe4a,true] 7580 --- [http-nio-9191-exec-2] c.student.ps.api.service.PaymentService  : paymentService findPaymentOrderId : {"paymentId":28,"paymentStatus":"success","transactionId":"e7b54ea1-52e3-45cf-b726-ef0f0ab3baa5","orderId":118,"amount":3000.0}
+2021-12-08 00:31:00.275  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:36:00.282  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:41:00.287  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:46:00.302  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:51:00.311  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 00:56:00.319  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:01:00.335  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:06:00.337  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:11:00.353  INFO [PAYMENT-SERVICE,,,] 7580 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:11:17.158  INFO [PAYMENT-SERVICE,878fe6a575317c2e,d4c0251c57cc8791,true] 7580 --- [http-nio-9191-exec-5] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"4948c88d-507c-49cf-a3f6-8e2bcb6b4fed","orderId":120,"amount":3000.0}
+2021-12-08 01:11:31.535  INFO [PAYMENT-SERVICE,0bbd0a1772da7a99,0bbd0a1772da7a99,true] 7580 --- [http-nio-9191-exec-4] c.student.ps.api.service.PaymentService  : paymentService findPaymentOrderId : {"paymentId":30,"paymentStatus":"success","transactionId":"4948c88d-507c-49cf-a3f6-8e2bcb6b4fed","orderId":120,"amount":3000.0}
+2021-12-08 01:19:16.701  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:19:17.934  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:19:18.270  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 317ms. Found 1 JPA repository interfaces.
+2021-12-08 01:19:19.245  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:19:20.756  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:19:20.773  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:19:20.774  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:19:21.068  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:19:21.069  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4336 ms
+2021-12-08 01:19:22.399  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:19:22.604  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:19:22.672  WARN [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:19:22.674  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:19:22.686  WARN [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:19:22.692  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:19:22.764  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:19:23.036  WARN [PAYMENT-SERVICE,,,] 6100 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:19:23.220  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:19:23.513  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:19:24.714  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:19:24.807  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:19:25.925  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:19:27.334  WARN [PAYMENT-SERVICE,,,] 6100 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:19:27.952  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:19:27.968  INFO [PAYMENT-SERVICE,,,] 6100 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:19:28.339  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:19:28.561  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:19:28.852  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:19:28.853  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:19:29.291  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:19:29.292  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:19:29.688  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:19:29.733  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:19:29.733  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:19:29.734  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:19:29.734  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:19:29.735  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:19:29.735  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:19:29.736  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:19:30.062  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:19:30.068  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:19:30.072  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:19:30.078  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638906570076 with initial instances count: 1
+2021-12-08 01:19:30.098  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:19:30.099  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638906570099, current=UP, previous=STARTING]
+2021-12-08 01:19:30.108  INFO [PAYMENT-SERVICE,,,] 6100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:19:30.182  INFO [PAYMENT-SERVICE,,,] 6100 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:19:30.183  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:19:30.185  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:19:30.461  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:19:31.302  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:19:31.330  INFO [PAYMENT-SERVICE,,,] 6100 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 16.811 seconds (JVM running for 17.844)
+2021-12-08 01:21:11.401  INFO [PAYMENT-SERVICE,,,] 6100 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 01:21:11.403  INFO [PAYMENT-SERVICE,,,] 6100 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 01:21:11.879  INFO [PAYMENT-SERVICE,,,] 6100 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 474 ms
+2021-12-08 01:21:12.343  INFO [PAYMENT-SERVICE,131032decf55503b,1bfea5e7cc2d681f,true] 6100 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"b29679dd-86a3-488b-b6fb-54f4b0871fe4","orderId":121,"amount":13000.0}
+2021-12-08 01:22:54.739  INFO [PAYMENT-SERVICE,db0b392a18f83d64,db0b392a18f83d64,true] 6100 --- [http-nio-9191-exec-2] c.student.ps.api.service.PaymentService  : paymentService findPaymentOrderId : {"paymentId":30,"paymentStatus":"success","transactionId":"4948c88d-507c-49cf-a3f6-8e2bcb6b4fed","orderId":120,"amount":3000.0}
+2021-12-08 01:24:29.755  INFO [PAYMENT-SERVICE,,,] 6100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:27:08.749  INFO [PAYMENT-SERVICE,850c40e5133607b5,c61651c6f14f4980,true] 6100 --- [http-nio-9191-exec-4] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"c3b315a5-526a-4d34-a1e1-0339a3f4a2d9","orderId":122,"amount":13000.0}
+2021-12-08 01:28:25.754  INFO [PAYMENT-SERVICE,3a8fd1dcab3cd787,3a8fd1dcab3cd787,true] 6100 --- [http-nio-9191-exec-5] c.student.ps.api.service.PaymentService  : paymentService findPaymentOrderId : {"paymentId":32,"paymentStatus":"success","transactionId":"c3b315a5-526a-4d34-a1e1-0339a3f4a2d9","orderId":122,"amount":13000.0}
+2021-12-08 01:29:29.761  INFO [PAYMENT-SERVICE,,,] 6100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:30:10.022  INFO [PAYMENT-SERVICE,d8f123d3ddbf7e5b,1cf580ba8e36108c,true] 6100 --- [http-nio-9191-exec-7] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"a46eb7a6-1cb5-4715-bd4a-93395f8c7656","orderId":123,"amount":13000.0}
+2021-12-08 01:30:17.896  INFO [PAYMENT-SERVICE,bc7a5c6d3565cfd2,ffd4169e1389c30a,true] 6100 --- [http-nio-9191-exec-8] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"13fa7414-d537-4659-a7de-71a33db8d34a","orderId":124,"amount":13000.0}
+2021-12-08 01:34:29.778  INFO [PAYMENT-SERVICE,,,] 6100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:39:29.783  INFO [PAYMENT-SERVICE,,,] 6100 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:43:39.441  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:43:40.751  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:43:41.100  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 331ms. Found 1 JPA repository interfaces.
+2021-12-08 01:43:41.920  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:43:43.396  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:43:43.410  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:43:43.411  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:43:43.740  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:43:43.741  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4266 ms
+2021-12-08 01:43:45.223  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:43:45.319  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:43:46.176  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:43:46.874  INFO [PAYMENT-SERVICE,,,] 13496 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:43:47.138  WARN [PAYMENT-SERVICE,,,] 13496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:43:47.150  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:43:47.375  WARN [PAYMENT-SERVICE,,,] 13496 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:43:47.377  INFO [PAYMENT-SERVICE,,,] 13496 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:43:47.591  INFO [PAYMENT-SERVICE,,,] 13496 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:43:56.550  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:43:59.874  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:44:00.726  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 727ms. Found 1 JPA repository interfaces.
+2021-12-08 01:44:03.557  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:44:09.645  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:44:09.668  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:44:09.668  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:44:10.947  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:44:10.948  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14252 ms
+2021-12-08 01:44:18.289  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:44:18.550  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:44:21.043  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:44:21.654  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:44:21.803  WARN [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:44:21.803  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:44:21.851  WARN [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:44:21.864  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:44:21.973  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:44:22.510  WARN [PAYMENT-SERVICE,,,] 13672 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:44:24.970  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:44:26.730  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:44:30.175  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:44:30.679  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:44:30.726  INFO [PAYMENT-SERVICE,,,] 13672 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:44:31.302  WARN [PAYMENT-SERVICE,,,] 13672 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:44:33.733  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:44:34.041  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:44:34.612  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:44:34.615  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:44:35.643  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:44:35.644  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:44:37.024  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:44:37.076  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:44:37.077  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:44:37.079  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:44:37.082  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:44:37.083  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:44:37.088  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:44:37.089  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:44:37.714  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:44:37.734  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:44:37.740  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:44:37.751  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638908077749 with initial instances count: 3
+2021-12-08 01:44:38.230  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:44:38.232  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638908078232, current=UP, previous=STARTING]
+2021-12-08 01:44:38.238  INFO [PAYMENT-SERVICE,,,] 13672 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:44:38.350  INFO [PAYMENT-SERVICE,,,] 13672 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:44:38.378  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:44:38.382  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:44:38.698  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:44:39.735  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:44:39.783  INFO [PAYMENT-SERVICE,,,] 13672 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 48.572 seconds (JVM running for 50.41)
+2021-12-08 01:45:01.399  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:45:02.732  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:45:03.067  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 315ms. Found 1 JPA repository interfaces.
+2021-12-08 01:45:04.028  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:45:05.452  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:45:05.475  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:45:05.477  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:45:05.784  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:45:05.785  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4346 ms
+2021-12-08 01:45:07.156  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:45:07.260  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:45:08.208  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:45:08.350  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:45:08.672  WARN [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:45:08.683  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:45:08.753  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:45:08.707  WARN [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:45:08.774  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:45:09.211  WARN [PAYMENT-SERVICE,,,] 5996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:45:09.310  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:45:09.788  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:45:11.290  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:45:11.746  WARN [PAYMENT-SERVICE,,,] 5996 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:45:11.962  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:45:11.982  INFO [PAYMENT-SERVICE,,,] 5996 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:45:12.436  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:45:12.686  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:45:12.965  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:45:12.968  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:45:13.418  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:45:13.419  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:45:13.876  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:45:13.922  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:45:13.922  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:45:13.924  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:45:13.925  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:45:13.925  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:45:13.928  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:45:13.928  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:45:14.383  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:45:14.392  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:45:14.401  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:45:14.411  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638908114409 with initial instances count: 3
+2021-12-08 01:45:14.442  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:45:14.443  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638908114443, current=UP, previous=STARTING]
+2021-12-08 01:45:14.449  INFO [PAYMENT-SERVICE,,,] 5996 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:45:14.575  INFO [PAYMENT-SERVICE,,,] 5996 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:45:14.598  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:45:14.601  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:45:14.869  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:45:15.656  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:45:15.700  INFO [PAYMENT-SERVICE,,,] 5996 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 16.462 seconds (JVM running for 17.599)
+2021-12-08 01:45:45.945  INFO [PAYMENT-SERVICE,,,] 5996 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 01:45:45.951  INFO [PAYMENT-SERVICE,,,] 5996 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 01:45:46.226  INFO [PAYMENT-SERVICE,,,] 5996 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 273 ms
+2021-12-08 01:45:46.633  INFO [PAYMENT-SERVICE,36704c0e762848bc,0a441d3ccce55d71,true] 5996 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"64f97fc5-55db-4f27-ba25-b6b3e781b3f9","orderId":125,"amount":13000.0}
+2021-12-08 01:47:45.364  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:47:46.618  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:47:46.921  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 287ms. Found 1 JPA repository interfaces.
+2021-12-08 01:47:47.715  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:47:49.124  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:47:49.144  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:47:49.146  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:47:49.479  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:47:49.480  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4072 ms
+2021-12-08 01:47:50.915  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:47:51.007  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:47:51.781  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:47:51.894  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:47:52.170  WARN [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:47:52.175  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:47:52.207  WARN [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:47:52.208  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:47:52.316  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:47:52.705  WARN [PAYMENT-SERVICE,,,] 8356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:47:52.883  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:47:53.284  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:47:54.698  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:47:55.122  WARN [PAYMENT-SERVICE,,,] 8356 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:47:55.340  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:47:55.362  INFO [PAYMENT-SERVICE,,,] 8356 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:47:55.785  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:47:55.995  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:47:56.308  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:47:56.308  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:47:56.778  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:47:56.779  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:47:57.215  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:47:57.259  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:47:57.260  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:47:57.261  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:47:57.261  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:47:57.261  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:47:57.262  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:47:57.262  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:47:57.679  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:47:57.685  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:47:57.692  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:47:57.703  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638908277701 with initial instances count: 3
+2021-12-08 01:47:57.743  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:47:57.744  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638908277744, current=UP, previous=STARTING]
+2021-12-08 01:47:57.747  INFO [PAYMENT-SERVICE,,,] 8356 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:47:57.821  INFO [PAYMENT-SERVICE,,,] 8356 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:47:57.842  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:47:57.844  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:47:58.350  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:47:59.311  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:47:59.351  INFO [PAYMENT-SERVICE,,,] 8356 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 16.548 seconds (JVM running for 17.626)
+2021-12-08 01:48:51.795  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:48:53.071  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:48:53.394  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 306ms. Found 1 JPA repository interfaces.
+2021-12-08 01:48:54.208  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:48:55.613  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:48:55.634  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:48:55.635  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:48:55.925  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:48:55.926  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4103 ms
+2021-12-08 01:48:57.246  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:48:57.317  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:48:58.136  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:48:58.345  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:48:58.589  WARN [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:48:58.600  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:48:58.664  WARN [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:48:58.665  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:48:58.901  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:48:59.118  WARN [PAYMENT-SERVICE,,,] 6048 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:48:59.359  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:48:59.899  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:49:01.318  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:49:01.752  WARN [PAYMENT-SERVICE,,,] 6048 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:49:01.823  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:49:01.855  INFO [PAYMENT-SERVICE,,,] 6048 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:49:02.410  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:49:02.651  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:49:03.607  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:49:03.608  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:49:04.081  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:49:04.082  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:49:04.556  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:49:04.623  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:49:04.623  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:49:04.624  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:49:04.624  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:49:04.625  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:49:04.626  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:49:04.628  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:49:05.141  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:49:05.147  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:49:05.152  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:49:05.160  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638908345157 with initial instances count: 3
+2021-12-08 01:49:05.186  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:49:05.187  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638908345187, current=UP, previous=STARTING]
+2021-12-08 01:49:05.193  INFO [PAYMENT-SERVICE,,,] 6048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:49:05.258  INFO [PAYMENT-SERVICE,,,] 6048 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:49:05.284  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:49:05.285  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:49:05.472  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:49:06.513  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:49:06.541  INFO [PAYMENT-SERVICE,,,] 6048 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 16.826 seconds (JVM running for 17.873)
+2021-12-08 01:49:52.309  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 01:49:53.535  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 01:49:53.851  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 300ms. Found 1 JPA repository interfaces.
+2021-12-08 01:49:54.652  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 01:49:56.164  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 01:49:56.182  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 01:49:56.183  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 01:49:56.514  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 01:49:56.516  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4170 ms
+2021-12-08 01:49:58.040  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 01:49:58.130  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 01:49:59.085  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 01:49:59.274  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 01:49:59.456  WARN [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:49:59.457  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:49:59.483  WARN [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 01:49:59.484  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 01:49:59.832  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 01:49:59.985  WARN [PAYMENT-SERVICE,,,] 2948 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 01:50:00.323  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 01:50:00.753  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 01:50:02.287  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 01:50:02.705  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 01:50:02.705  WARN [PAYMENT-SERVICE,,,] 2948 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 01:50:02.723  INFO [PAYMENT-SERVICE,,,] 2948 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 01:50:03.549  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 01:50:03.853  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 01:50:04.208  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 01:50:04.209  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 01:50:04.707  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 01:50:04.707  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 01:50:05.553  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 01:50:05.619  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 01:50:05.619  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 01:50:05.620  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 01:50:05.621  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 01:50:05.621  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 01:50:05.621  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 01:50:05.622  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 01:50:05.987  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 01:50:06.003  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 01:50:06.017  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 01:50:06.046  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638908406044 with initial instances count: 3
+2021-12-08 01:50:06.074  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 01:50:06.075  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638908406075, current=UP, previous=STARTING]
+2021-12-08 01:50:06.079  INFO [PAYMENT-SERVICE,,,] 2948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 01:50:06.171  INFO [PAYMENT-SERVICE,,,] 2948 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 01:50:06.189  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 01:50:06.191  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 01:50:06.686  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 01:50:07.823  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 01:50:07.859  INFO [PAYMENT-SERVICE,,,] 2948 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 17.596 seconds (JVM running for 18.752)
+2021-12-08 01:53:08.103  INFO [PAYMENT-SERVICE,,,] 2948 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 01:53:08.105  INFO [PAYMENT-SERVICE,,,] 2948 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 01:53:08.195  INFO [PAYMENT-SERVICE,,,] 2948 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 84 ms
+2021-12-08 01:53:08.459  INFO [PAYMENT-SERVICE,ddb44c590b7f8058,066b9fe719a99aca,true] 2948 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"a80945bb-87d6-4511-82bc-6aca0e06fdca","orderId":126,"amount":13000.0}
+2021-12-08 01:55:05.635  INFO [PAYMENT-SERVICE,,,] 2948 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:01:29.969  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 02:01:31.199  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 02:01:31.525  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 307ms. Found 1 JPA repository interfaces.
+2021-12-08 02:01:32.588  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 02:01:34.049  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 02:01:34.070  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 02:01:34.072  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 02:01:34.366  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 02:01:34.367  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4351 ms
+2021-12-08 02:01:35.612  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 02:01:35.701  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 02:01:36.456  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 02:01:36.592  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 02:01:36.731  WARN [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 02:01:36.736  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 02:01:36.750  WARN [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 02:01:36.751  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 02:01:36.809  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 02:01:37.162  WARN [PAYMENT-SERVICE,,,] 14180 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 02:01:37.429  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 02:01:37.954  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 02:01:39.536  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 02:01:39.902  WARN [PAYMENT-SERVICE,,,] 14180 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 02:01:39.950  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 02:01:39.981  INFO [PAYMENT-SERVICE,,,] 14180 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 02:01:40.840  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 02:01:41.078  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 02:01:41.338  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 02:01:41.338  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 02:01:41.795  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 02:01:41.796  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 02:01:42.365  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:01:42.409  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 02:01:42.410  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 02:01:42.412  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 02:01:42.412  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 02:01:42.412  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 02:01:42.415  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 02:01:42.415  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 02:01:42.780  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 02:01:42.786  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 02:01:42.791  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 02:01:42.799  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638909102796 with initial instances count: 1
+2021-12-08 02:01:42.821  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 02:01:42.825  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638909102825, current=UP, previous=STARTING]
+2021-12-08 02:01:42.829  INFO [PAYMENT-SERVICE,,,] 14180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 02:01:42.904  INFO [PAYMENT-SERVICE,,,] 14180 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 02:01:42.916  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 02:01:42.918  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 02:01:43.099  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 02:01:44.365  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 02:01:44.406  INFO [PAYMENT-SERVICE,,,] 14180 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 16.891 seconds (JVM running for 17.98)
+2021-12-08 02:02:36.225  INFO [PAYMENT-SERVICE,,,] 14180 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 02:02:36.225  INFO [PAYMENT-SERVICE,,,] 14180 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 02:02:36.342  INFO [PAYMENT-SERVICE,,,] 14180 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 116 ms
+2021-12-08 02:02:37.092  INFO [PAYMENT-SERVICE,ce3f03c0038c5719,39a3648e08507935,true] 14180 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"f71f44b3-82a8-46df-a5d6-433104061799","orderId":127,"amount":13000.0}
+2021-12-08 02:06:42.434  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:11:42.451  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:16:42.466  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:21:42.472  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:26:42.487  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:41:34.503  WARN [PAYMENT-SERVICE,,,] 14180 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m27s327ms931µs600ns).
+2021-12-08 02:42:39.798  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:47:39.802  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:52:39.815  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 02:57:39.821  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 03:02:39.833  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 03:07:39.836  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 03:12:39.851  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 06:17:03.323  WARN [PAYMENT-SERVICE,,,] 14180 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s280ms738µs100ns).
+2021-12-08 09:10:51.551  WARN [PAYMENT-SERVICE,,,] 14180 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h54m11s973ms642µs400ns).
+2021-12-08 09:10:56.339  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:13:45.504  INFO [PAYMENT-SERVICE,661a376f77621ea4,c7b7a85006ac3ed0,true] 14180 --- [http-nio-9191-exec-2] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"8015e8da-6bcd-4b38-bd44-b24d03ef66b7","orderId":128,"amount":13000.0}
+2021-12-08 09:15:56.347  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:20:56.357  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:25:56.358  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:30:56.371  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:35:56.374  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:40:56.385  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:45:56.393  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:50:56.399  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 09:55:56.412  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:00:56.424  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:05:56.428  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:10:56.438  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:15:56.443  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:20:56.454  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:25:56.462  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:30:56.466  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:35:56.468  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:40:56.472  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:45:56.489  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:50:56.504  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 10:55:56.516  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:00:56.531  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:05:56.544  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:10:56.564  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:15:56.567  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:20:56.572  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:25:56.577  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:30:56.593  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:35:56.596  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:40:56.599  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:45:56.608  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:50:56.620  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 11:55:56.623  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:00:56.631  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:05:56.645  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:10:56.655  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:15:56.659  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:20:56.665  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:25:56.668  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:30:56.682  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:35:56.687  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:40:56.697  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:45:56.704  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:50:56.714  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 12:55:56.730  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:00:56.748  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:05:56.759  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:10:56.771  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:15:56.781  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:20:56.794  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:25:56.808  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:30:56.814  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:35:56.842  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:40:56.858  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:44:53.876  INFO [PAYMENT-SERVICE,f77b4666471d7792,9ae6b51aac4c9169,true] 14180 --- [http-nio-9191-exec-4] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"2e793139-a98b-4029-8cfb-fcd194e5dcc1","orderId":129,"amount":13000.0}
+2021-12-08 13:45:01.310  WARN [PAYMENT-SERVICE,,,] 14180 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2021-12-08 13:45:11.713  WARN [PAYMENT-SERVICE,,,] 14180 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:147) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:137) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.7.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.15.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:791) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:726) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529) ~[na:na]
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:64) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:770) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 9 common frames omitted
+
+2021-12-08 13:45:34.835  INFO [PAYMENT-SERVICE,3592b77195f4b871,56acfa8be3337eeb,true] 14180 --- [http-nio-9191-exec-5] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"e35d75a0-6a59-41ed-994e-dc4d8ef5fcbd","orderId":129,"amount":13000.0}
+2021-12-08 13:45:56.867  INFO [PAYMENT-SERVICE,,,] 14180 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:46:46.788  INFO [PAYMENT-SERVICE,af1f2fe318271d7c,78009e7e889e46cb,true] 14180 --- [http-nio-9191-exec-6] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"bd6d8699-acba-4485-9ed9-6783b6a0c993","orderId":130,"amount":13000.0}
+2021-12-08 13:47:05.697  INFO [PAYMENT-SERVICE,88bf33b9a8974ef4,6d3fdd86c7738f27,true] 14180 --- [http-nio-9191-exec-7] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"6363bc99-6f7f-4855-bbe0-81d85de94dcf","orderId":131,"amount":13000.0}
+2021-12-08 13:52:29.135  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : No active profile set, falling back to default profiles: default
+2021-12-08 13:52:30.400  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-08 13:52:30.706  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 287ms. Found 1 JPA repository interfaces.
+2021-12-08 13:52:31.570  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47a7eaf6-cf40-38a1-9fd4-cda7c2896100
+2021-12-08 13:52:33.006  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9191 (http)
+2021-12-08 13:52:33.038  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-08 13:52:33.039  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-12-08 13:52:33.359  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-08 13:52:33.360  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4192 ms
+2021-12-08 13:52:34.700  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-08 13:52:34.790  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-08 13:52:35.816  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-08 13:52:35.928  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-08 13:52:36.090  WARN [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 13:52:36.094  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 13:52:36.119  WARN [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-12-08 13:52:36.120  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-12-08 13:52:36.138  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2021-12-08 13:52:36.381  WARN [PAYMENT-SERVICE,,,] 14288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-08 13:52:36.555  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-12-08 13:52:37.134  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-08 13:52:38.640  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-12-08 13:52:39.373  WARN [PAYMENT-SERVICE,,,] 14288 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-12-08 13:52:40.205  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-08 13:52:40.421  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-08 13:52:40.439  INFO [PAYMENT-SERVICE,,,] 14288 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 13:52:40.455  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-08 13:52:40.709  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-12-08 13:52:40.710  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-12-08 13:52:41.081  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-12-08 13:52:41.082  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-12-08 13:52:41.737  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 13:52:41.790  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-08 13:52:41.790  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-08 13:52:41.792  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-08 13:52:41.793  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-08 13:52:41.793  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-08 13:52:41.795  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-08 13:52:41.796  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-08 13:52:42.138  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-08 13:52:42.145  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-08 13:52:42.150  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-08 13:52:42.158  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1638951762155 with initial instances count: 1
+2021-12-08 13:52:42.183  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2021-12-08 13:52:42.185  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1638951762185, current=UP, previous=STARTING]
+2021-12-08 13:52:42.189  INFO [PAYMENT-SERVICE,,,] 14288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191: registering service...
+2021-12-08 13:52:42.283  INFO [PAYMENT-SERVICE,,,] 14288 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/DESKTOP-UVQ15EM:PAYMENT-SERVICE:9191 - registration status: 204
+2021-12-08 13:52:42.313  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9191 (http) with context path ''
+2021-12-08 13:52:42.315  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9191
+2021-12-08 13:52:42.464  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-08 13:52:45.895  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-08 13:52:45.925  INFO [PAYMENT-SERVICE,,,] 14288 --- [main] c.s.ps.api.ElkPaymentServiceApplication  : Started ElkPaymentServiceApplication in 18.924 seconds (JVM running for 20.086)
+2021-12-08 13:54:16.068  INFO [PAYMENT-SERVICE,,,] 14288 --- [http-nio-9191-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-08 13:54:16.069  INFO [PAYMENT-SERVICE,,,] 14288 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-08 13:54:16.129  INFO [PAYMENT-SERVICE,,,] 14288 --- [http-nio-9191-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 59 ms
+2021-12-08 13:54:16.415  INFO [PAYMENT-SERVICE,e920023c6539d729,9c6ebd39c62c6ae7,true] 14288 --- [http-nio-9191-exec-1] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"2fa9ebad-aad5-459c-9aff-2f45133183df","orderId":132,"amount":13000.0}
+2021-12-08 13:57:41.807  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:02:41.818  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:07:41.834  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:12:41.837  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:17:41.853  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:22:41.857  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:27:41.864  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:32:41.873  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:37:41.887  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:42:41.891  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:47:41.898  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:49:35.281  INFO [PAYMENT-SERVICE,55d037c650f3d160,c1b3f625e9c298cb,true] 14288 --- [http-nio-9191-exec-3] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"a987ea12-afc9-4216-9c58-b931f0c9c3d3","orderId":133,"amount":13000.0}
+2021-12-08 14:52:41.901  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 14:57:41.918  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:02:41.925  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:07:41.938  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:12:41.940  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:17:41.946  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:22:41.951  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:27:41.953  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:32:41.963  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:37:41.969  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:42:41.971  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:47:41.975  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:52:41.976  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 15:59:25.979  WARN [PAYMENT-SERVICE,,,] 14288 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m18s29ms658µs500ns).
+2021-12-08 16:01:29.999  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:06:30.002  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:11:30.009  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:16:30.016  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:21:30.024  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:26:30.030  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:31:30.035  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:36:30.043  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:41:30.050  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:46:30.054  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:46:43.476  INFO [PAYMENT-SERVICE,9120286b4ce79841,71483fea6a310c7f,true] 14288 --- [http-nio-9191-exec-4] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"8e2c0cb3-fd8e-4ceb-ab40-d9dcc6b4fa74","orderId":134,"amount":13000.0}
+2021-12-08 16:46:49.592  WARN [PAYMENT-SERVICE,,,] 14288 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2021-12-08 16:46:53.412  WARN [PAYMENT-SERVICE,,,] 14288 --- [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:147) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:137) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.7.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.2.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) ~[zipkin-reporter-2.15.2.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966) ~[na:na]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:284) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:791) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:726) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1688) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:529) ~[na:na]
+	at org.springframework.http.client.SimpleClientHttpResponse.getRawStatusCode(SimpleClientHttpResponse.java:55) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.hasError(DefaultResponseErrorHandler.java:64) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:770) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 9 common frames omitted
+
+2021-12-08 16:47:31.632  INFO [PAYMENT-SERVICE,b0fb93d4324ebe4b,79c7a84598c06a91,true] 14288 --- [http-nio-9191-exec-5] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"752d6363-eca6-472a-a9bf-0ee829f3e9a5","orderId":135,"amount":23000.0}
+2021-12-08 16:48:16.760  INFO [PAYMENT-SERVICE,c6707d8b619bb0da,5391c409514bd837,true] 14288 --- [http-nio-9191-exec-6] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"false","transactionId":"ba58a7b7-bbe3-491d-849e-07c6ef2dbf85","orderId":136,"amount":23000.0}
+2021-12-08 16:48:29.452  INFO [PAYMENT-SERVICE,665241cccff2fdd3,e0298a7bfe099ded,true] 14288 --- [http-nio-9191-exec-7] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"bb82e6c7-5c34-421f-ade3-b230fd31cae4","orderId":137,"amount":23000.0}
+2021-12-08 16:51:30.058  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 16:56:30.073  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:01:30.075  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:06:30.090  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:11:30.095  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:16:30.099  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:21:30.106  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:26:30.122  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:30:09.259  INFO [PAYMENT-SERVICE,58e555fca48cc12a,d8c35ba59a304d79,true] 14288 --- [http-nio-9191-exec-9] c.student.ps.api.service.PaymentService  : PaymentService request : {"paymentId":0,"paymentStatus":"success","transactionId":"c6065c45-b834-46d5-8658-f1205c158159","orderId":137,"amount":23000.0}
+2021-12-08 17:31:30.125  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:36:30.135  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:41:30.147  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:46:30.158  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:51:30.161  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 17:56:30.176  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-08 18:01:30.190  INFO [PAYMENT-SERVICE,,,] 14288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
